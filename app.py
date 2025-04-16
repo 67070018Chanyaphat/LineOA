@@ -21,7 +21,7 @@ for var, description in required_vars.items():
 # ==============================================
 channel_access_token = os.getenv("LINE_CHANNEL_ACCESS_TOKEN")
 channel_secret = os.getenv("LINE_CHANNEL_SECRET")
-port = int(os.getenv("PORT", "8000"))  # ใช้พอร์ต 8000 เป็นค่า default
+port = int(os.environ.get("PORT", "8000"))  # ใช้พอร์ต 8000 เป็นค่า default
 
 # ==============================================
 # เริ่มต้น Flask Application
