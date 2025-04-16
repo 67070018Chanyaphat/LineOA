@@ -3,10 +3,21 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 import os
+import sys  # เพิ่มบรรทัดนี้
 
 app = Flask(__name__)
 
-# ใช้ Environment Variables จาก Railway
+# ตรวจสอบ Environment Variables ก่อนเริ่มทำงาน
+def check_env_vars():
+    required_vars = ['LINE_CHANNEL_ACCESS_TOKEN', 'LINE_CHANNEL_SECRET']
+    missing_vars = [var for var in required_vars if not os.getenv(var)]
+    if missing_vars:
+        print(f"ERROR: Missing environment variables: {', '.join(missing_vars)}")
+        sys.exit(1)
+
+check_env_vars()  # เรียกฟังก์ชันตรวจสอบ
+
+# เริ่มใช้งาน LINE API
 line_bot_api = LineBotApi(os.getenv('LINE_CHANNEL_ACCESS_TOKEN'))
 handler = WebhookHandler(os.getenv('LINE_CHANNEL_SECRET'))
 
