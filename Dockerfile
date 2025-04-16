@@ -4,4 +4,4 @@ COPY . .
 RUN pip install -r requirements.txt
 
 # ใช้วิธีที่ 2 (ง่ายและครอบคลุม)
-CMD ["sh", "-c", "gunicorn app:app --bind 0.0.0.0:${PORT:-8000}"]
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8000"]  # ใช้พอร์ต 8000
