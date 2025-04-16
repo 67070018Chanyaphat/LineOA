@@ -32,8 +32,5 @@ def handle_message(event):
     )
 
 if __name__ == "__main__":
-    try:
-        port = int(os.environ.get("PORT", "8000"))
-    except ValueError:
-        port = 8000  # ค่า default เมื่อค่า PORT ไม่ถูกต้อง
+    port = int(os.getenv("PORT", 8000))
     app.run(host="0.0.0.0", port=port)
