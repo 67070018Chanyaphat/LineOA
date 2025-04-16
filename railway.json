@@ -1,17 +1,17 @@
 {
-    "build": {
-      "builder": "nixpacks",
-      "config": {
-        "phases": {
-          "install": {
-            "cmds": [
-              "pip install --user -r requirements.txt"
-            ]
-          }
+  "build": {
+    "builder": "nixpacks",
+    "config": {
+      "phases": {
+        "install": {
+          "cmds": [
+            "pip install -r requirements.txt"  # ลบ --user ออกเพื่อติดตั้งในระบบหลัก
+          ]
         }
       }
-    },
-    "deploy": {
-      "startCommand": "gunicorn app:app --bind 0.0.0.0:$PORT"
     }
+  },
+  "deploy": {
+    "startCommand": "gunicorn app:app --bind 0.0.0.0:${PORT:-8000}"  # ใช้รูปแบบ ${PORT} พร้อมค่า default
   }
+}
