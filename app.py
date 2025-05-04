@@ -39,14 +39,16 @@ def handle_message(event):
     
     if "สวัสดี" in user_message:
         reply_text = """สวัสดีค่ะ/ครับ
-นี่คือช่องทางติดต่ออย่างเป็นทางการและประชาสัมพันธ์ข่าวสารขององค์การนักศึกษา สจล.
-สามารถติดตามข่าวสารได้ที่ :
-- Facebook: องค์การนักศึกษา KMITL
-- Instagram: sor.kmitlofficial"""
-    
-    elif "ข่าวสารล่าสุด" in user_message:
-        reply_text = """ผู้อัญเชิญพระมหามงกุฎและฉัตรปริวาร ประจำปี 2568 
-www.instagram.com/p/DGvgOCaB1qL"""
+นี่คือช่องทางติดต่ออย่างเป็นทางการและประชาสัมพันธ์ข่าวสารขององค์การนักศึกษา สจล."""
+
+    elif "ติดต่อองค์การ" in user_message:
+        reply_text = "รอตอบกลับจากองค์การนักศึกษาภายในเวลาทำการค่ะ/ครับ"
+
+    elif "ช่องทางติดต่อ" in user_message:
+        reply_text = """นี่คือช่องทางติดต่อของเรา
+IG : https://www.instagram.com/sor.kmitlofficial
+FB : https://www.facebook.com/sorkmitl
+Tiktok : https://www.tiktok.com/@sorkmitlofficial"""
     
     else:
         reply_text = "หากต้องการติดต่อองค์การนักศึกษาโดยตรง สามารถทิ้งข้อความแล้วรอตอบกลับในเวลาทำการค่ะ/ครับ"
