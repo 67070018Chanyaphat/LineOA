@@ -49,6 +49,12 @@ def handle_message(event):
 IG : https://www.instagram.com/sor.kmitlofficial
 FB : https://www.facebook.com/sorkmitl
 Tiktok : https://www.tiktok.com/@sorkmitlofficial"""
+    elif "เดินทาง" in user_message:
+        reply_text = """วิธีเดินทางมายัง สจล. ง่ายๆแบบนี้เลย
+เดินทางด้วย รถไฟ ลงป้าย "หยุดรถไฟพระจอมเกล้า"
+ตรวจสอบเวลาการเดินรถไฟ https://www.railway.co.th/SRTTimetable/StationListl
+เดินทางด้วย ขนส่งสาธารณะ รถเมล์ รถสองแถว รถตู้
+ตรวจสอบสายรถ https://www.facebook.com/share/16i3DzyvUd/?mibextid=wwXIfr"""
     
     else:
         reply_text = "หากต้องการติดต่อองค์การนักศึกษาโดยตรง สามารถทิ้งข้อความแล้วรอตอบกลับในเวลาทำการค่ะ/ครับ"
