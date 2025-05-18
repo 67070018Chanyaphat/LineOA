@@ -56,13 +56,21 @@ Tiktok : https://www.tiktok.com/@sorkmitlofficial"""
 ตรวจสอบเวลาการเดินรถไฟ https://www.railway.co.th/SRTTimetable/StationListl
 🚌 ขนส่งสาธารณะ รถเมล์ รถสองแถว รถตู้
 ตรวจสอบสายรถ https://www.facebook.com/share/16i3DzyvUd/?mibextid=wwXIfr"""
-    elif re.search(r"^first\s*step$", user_message, re.IGNORECASE):
+    elif re.search(r"^first\s*step$" in user_message, re.IGNORECASE):
         reply_text = "รอติดตามประกาศเร็วๆนี้ ได้ที่ช่องทางประชาสัมพันธ์ขององค์การนักศึกษาได้เลย ‼️🥰"
     
     elif "รับน้อง" in user_message:
         reply_text = "รอติดตามประกาศเร็วๆนี้ ได้ที่ช่องทางประชาสัมพันธ์ของ องค์การนักศึกษาได้เลย ‼️🥰"
     elif "เร็ว" in user_message:
         reply_text = "ก็ต้องเป็นกิจกรรม First Step ยังไงล่ะ ชาวสจล.!! 🥰🌟"
+    elif "ยังไง" in user_message or "อย่างไร" in user_message:
+        reply_text = """ต้องการความช่วยเหลืออยู่หรือเปล่า 🤗
+        📃 วิธีขอใบ Transcript 
+            > https://drive.google.com/file/d/1DgA1IkmQmq7UuGDmEhbK33lSfmRXCPvY/view?usp=sharing
+        ⌚ วิธีเช็คชั่วโมงกิจกรรม
+            > https://drive.google.com/file/d/1T7AxhDnNPS1Vde67tFGmrEZCLs1j2-df/view?usp=sharing
+        """
+    
 
     line_bot_api.reply_message(
         event.reply_token,
