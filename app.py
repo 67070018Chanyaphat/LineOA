@@ -70,16 +70,14 @@ Tiktok : https://www.tiktok.com/@sorkmitlofficial"""
             > https://drive.google.com/file/d/1T7AxhDnNPS1Vde67tFGmrEZCLs1j2-df/view?usp=sharing
         """
     elif "ปฏิทิน" in user_message:
-        reply_text = """
-        🗓️ ปฏิทินกิจกรรมการศึกษา 
-            > https://www.reg.kmitl.ac.th/educalendar/2568/th-2.pdf
-        ส่วนกิจกรรมสนุกๆ ภายในปีการศึกษา 2568 
-        กดติดตามช่องทางประชาสัมพันธ์ องค์การนักศึกษาไว้เลย
-        IG : https://www.instagram.com/sor.kmitlofficial
-        FB : https://www.facebook.com/sorkmitl
-        Tiktok : https://www.tiktok.com/@sorkmitlofficial
-        🥰🌟❤️‍🔥
-        """
+        reply_text = """🗓️ ปฏิทินกิจกรรมการศึกษา 
+        > https://www.reg.kmitl.ac.th/educalendar/2568/th-2.pdf
+    ส่วนกิจกรรมสนุกๆ ภายในปีการศึกษา 2568 
+    กดติดตามช่องทางประชาสัมพันธ์ องค์การนักศึกษาไว้เลย
+    IG : https://www.instagram.com/sor.kmitlofficial
+    FB : https://www.facebook.com/sorkmitl
+    Tiktok : https://www.tiktok.com/@sorkmitlofficial
+    🥰🌟❤️‍🔥"""
     
 
     line_bot_api.reply_message(
