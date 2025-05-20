@@ -83,7 +83,7 @@ IG : https://www.instagram.com/sor.kmitlofficial
 FB : https://www.facebook.com/sorkmitl
 Tiktok : https://www.tiktok.com/@sorkmitlofficial
 🥰🌟❤️‍🔥"""
-    elif "เข็ม" in user_message or "ไทด์" in user_message:
+    elif "เข็ม" in user_message or "ไทด์" in user_message or "ตุ้ง" in user_message:
         reply_text = """🤔⁉️ สำหรับน้องๆ นักศึกษาชั้นปีที่ 1 สามารถติดตามประกาศ การซื้อเครื่องหนังและเครื่องโลหะ ได้ที่ช่องทางประชาสัมพันธ์ของสโมสรนักศึกษา ที่สังกัดอยู่ได้เลย 
         
 โดยพิมพ์ว่า สโม ในช่องแชทนี้ 
